@@ -1,0 +1,25 @@
+.coin-filter {
+  width: 250px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.301);
+  border-radius: 25px;
+  ul {
+    display: flex;
+    padding: 5px 10px;
+  }
+  li {
+    display: inline-block;
+    width: 83px;
+    button {
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: Transparent;
+      color: rgba(255, 255, 255, 0.411);
+      font-size: 15px;
+    }
+    button:focus {
+      color: rgb(255, 255, 255);
+    }
+  }
+}

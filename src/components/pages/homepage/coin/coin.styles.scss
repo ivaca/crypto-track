@@ -1,0 +1,62 @@
+.coin,
+.coin-no-anim {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 22px;
+  padding-bottom: 22px;
+  font-size: 17px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.829);
+  border-bottom: 1px rgba(255, 255, 255, 0.103) solid;
+}
+.coin-img img {
+  height: 35px;
+  width: 35px;
+}
+@for $i from 1 through 30 {
+  .coin:nth-child(#{$i}n) {
+    animation-iteration-count: 1;
+    -webkit-animation: asd 1s;
+    animation: asd 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: #{$i * 0.1}s;
+
+    // animation: asd #{$i * 0.3}s;
+  }
+}
+@-webkit-keyframes asd {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes asd {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.coin-name {
+  width: 25%;
+}
+.coin-price {
+  width: 25%;
+}
+
+@media only screen and (max-width: 768px) {
+  .coin-name {
+    width: 35%;
+  }
+  .coin-price {
+    width: 35%;
+  }
+}

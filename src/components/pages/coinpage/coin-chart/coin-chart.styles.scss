@@ -1,0 +1,22 @@
+.chart {
+  width: 550px;
+  height: 350px;
+}
+@media only screen and (max-width: 1200px) {
+  .chart {
+    width: 550px;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .chart {
+    width: 470px;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .chart {
+    width: 330px;
+    height: 350px;
+  }
+}
