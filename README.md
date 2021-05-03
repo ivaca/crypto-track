@@ -1,4 +1,4 @@
-# Crypto currency "tracker" via websockets.
- Only ONE client can be connected to websockets due https://min-api.cryptocompare.com/ restrictions.
-## Stack used:
+# Трекер криптовалюты в реальном времени через websocket.
+При нажатии на криптовалюты открывается страница с графиком.
+## Stack :
                redux, redux-saga, react, chartjs, a bit of scss.
